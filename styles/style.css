@@ -1,0 +1,46 @@
+/* common style */
+body {
+  background-color: #e5e5e5;
+}
+hr {
+  border: 1px solid #d1d1d1;
+  width: 807px;
+}
+/* top player style */
+.container {
+  display: grid;
+  justify-content: center;
+  background-color: #fff;
+  width: 870px;
+  margin: 0 auto;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+.player {
+  display: flex;
+}
+.player img {
+  width: 56px;
+}
+.player-title {
+  color: #562eff;
+}
+/* top blog style */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2em;
+}
+.blog {
+  display: flex;
+  margin-bottom: 26px;
+}
+.blog img {
+  width: 97px;
+}
+.blog-info {
+  margin-left: 20px;
+}
