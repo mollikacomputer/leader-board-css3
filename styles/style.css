@@ -8,11 +8,13 @@ hr {
 }
 /* top player style */
 .container {
-  display: grid;
-  justify-content: center;
+  /* display: grid; */
+  /* justify-content: center;
+  align-items: center; */
   background-color: #fff;
   width: 870px;
   margin: 1em auto;
+  border: 1px solid black;
   border-radius: 8px;
 }
 .players {
@@ -20,6 +22,12 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
 }
+/* for check this area */
+/* .players,
+.blogs,
+.courses {
+  border: 1px solid red;
+} */
 .player {
   display: flex;
 }
@@ -76,3 +84,90 @@ hr {
   border-radius: 15px;
   padding: 4px;
 }
+.player-title,
+.course-title,
+.players,
+.blogs,
+.courses {
+  margin-left: 1em;
+}
+/* ----------------------------------------------------
+responsive css for mobile devices
+-------------------------------------------------------*/
+@media only screen and (max-width: 788px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .player,
+  .blog {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*-------------------------------------------
+Tablet or ipad devices
+---------------------------------------------*/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* responsive CSS */
+/* 
+
+@media only screen and (min-width: 400px) {
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player h3,
+  .blog-info {
+    margin-left: 0px;
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player,
+  .blog {
+    display: flex;
+  }
+  .player h3,
+  .blog-info {
+    margin-left: 1em;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .player h3,
+  .blog-info {
+    margin-left: 1em;
+    padding: 0px;
+  }
+} */
